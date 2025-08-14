@@ -1,16 +1,47 @@
-# flutter_app
+# Flutter Login & Home App
 
-A new Flutter project.
+A Flutter application with login authentication and image gallery using Bloc state management.
+
+## Features
+
+- **Login Screen**: Email and password validation with form submission
+- **Home Screen**: Displays 10 images from Picsum API in a vertical list
+- **Bloc State Management**: Clean architecture with separate blocs for each feature
+- **Input Validation**: Email format and password strength validation
+- **Responsive Design**: Images adapt to screen width with proper aspect ratios
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Clone the repository
+2. Run `flutter pub get` to install dependencies
+3. Run `flutter run` to start the app
 
-A few resources to get you started if this is your first Flutter project:
+## Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- `flutter_bloc` - State management
+- `http` - API integration
+- `google_fonts` - Montserrat font styling
+- `equatable` - Value equality for states
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Architecture
+
+```
+lib/
+├── features/
+│   ├── login/
+│   │   ├── login_bloc.dart
+│   │   ├── login_event.dart
+│   │   └── login_state.dart
+│   └── home/
+│       ├── home_bloc.dart
+│       ├── home_event.dart
+│       └── home_state.dart
+└── screens/
+    ├── login_screen.dart
+    └── home_screen.dart
+```
+
+## Validation Rules
+
+- **Email**: Must match valid email format
+- **Password**: Minimum 8 characters with uppercase, lowercase, number,
