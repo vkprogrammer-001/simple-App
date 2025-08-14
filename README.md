@@ -44,4 +44,4 @@ lib/
 ## Validation Rules
 
 - **Email**: Must match valid email format
-- **Password**: Minimum 8 characters with uppercase, lowercase, number,
+- **Password**: Minimum 8 characters with uppercase, lowercase, number, and symbol
